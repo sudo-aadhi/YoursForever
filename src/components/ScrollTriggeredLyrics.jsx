@@ -160,7 +160,20 @@ const ScrollTriggeredLyrics = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col flex-wrap items-start justify-start w-full h-auto max-w-[600px] py-2 gap-6">
+      <motion.div
+        className="flex flex-col flex-wrap items-start justify-start w-full h-auto max-w-[600px] py-2 gap-6"
+        viewport={{ once: true }}
+        initial={{
+          opacity: 0,
+        }}
+        whileInView={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 1.5,
+          ease: "easeInOut",
+        }}
+      >
         <p className="text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-bold tracking-tighter">
           I will do anything for you. All I want is you, your happiness, and a
           beautiful life with you. You are everything I wished and dreamed for
@@ -168,12 +181,28 @@ const ScrollTriggeredLyrics = () => {
           ❤️, and I will treat you like a princess 👑, as my queen 👸, and as my
           baby 👶🏻. I will respect and honor you like my mother 💖. Seriously, I
           am so madly in love with you 🥺. Even as I write this, my eyes and
-          tears 😢 reveal how much you mean to me, because words alone can't
+          tears 😭 reveal how much you mean to me, because words alone can't
           explain my inner feelings. Be with me forever, hold my hand 🤝, and I
           will show you what real, pure, blind, mad love is 💘. I love you so
-          much 🥺❤️♾️📈
+          much 🥺❤️♾️📈, wait a little until iam gonna marry you and i promise i
+          will give you everything you need and every drop of love in my heart
+          and soul which is an endless and inifnite 💍
         </p>
-        <p className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold tracking-tighter">
+        <motion.p
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold tracking-tighter"
+          viewport={{ once: true }}
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 1.5,
+            delay: 0.5,
+            ease: "easeInOut",
+          }}
+        >
           I love you more than words can express, Devu. My love for you is
           infinite, and even that seems small in comparison to the depths of
           what I feel for you. No one could ever love you the way I do, and no
@@ -183,7 +212,7 @@ const ScrollTriggeredLyrics = () => {
           one person I love so madly and so completely, and that person is you,
           Devu 🥺❤️. You are my heart ❤️, my soul 💫, you are my breath🌬️, my
           everything 💖.
-        </p>
+        </motion.p>
         <p className="text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl font-bold tracking-tighter">
           Forever in my every lives and every heartbeat im yours and only yours
           and you are mine only mine forever 💍💯
@@ -191,7 +220,7 @@ const ScrollTriggeredLyrics = () => {
         <p className="text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl font-bold tracking-tighter">
           Your's Aadhi🫀
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };
